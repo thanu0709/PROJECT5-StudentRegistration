@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Query Parameters</title>
+</head>
+<body>
+    <h1>Query Parameters</h1>
+    <div id="query-params"></div>
+
+    <script>
+        // Get the string from the URL
+        const params = new URLSearchParams(window.location.search);
+
+        // Display each parameter
+        params.forEach((value, key) => {
+            const paramElement = document.createElement('h1');
+            paramElement.textContent = `${key}: ${value}`;
+            document.getElementById('query-params').appendChild(paramElement);
+        });
+    </script>
+</body>
+</html>

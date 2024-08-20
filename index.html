@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <p>Please fill out the form below to register as a student</p>
+    <form action="response.html" method="GET">
+        <div>
+            <Label for="full-name">Full Name: </Label>
+            <input name="full-name" type="text" id="full-name">
+        </div> 
+        <div>
+            <Label for="email">email: </Label>
+            <input name="email" type="email" id="email">
+        </div>
+        <div>
+            <Label for="dob">Date of Birth: </Label>
+            <input name="dob" type="date" id="dob">
+        </div>
+        <div>
+            <Label for="phone-number">Phone Number: </Label>
+            <input name="phone-number" type="number" id="phone-number">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female:</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="other">Other:</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </fieldset>
+        </div>
+        <div>
+            <label for="options">Courses Interested:</label>
+            <select name="options" id="options">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments"></textarea>
+        </div>
+        <button type="submit">Register</button>
+        <br>
+        <hr>
+        <br>
+        <h2>registered students' details</h2>
+        <table border="1">
+            <thead>
+                <th>Student ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+                <th>Courses Interested</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Sundar Thanushan</td>
+                    <td>thanu.batti1@gmail.com</td>
+                    <td>07.09.1998</td>
+                    <td>0754524376</td>
+                    <td>male</td>
+                    <td>html</td>
+                    
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Kamal</td>
+                    <td>Kamal@gmail.com</td>
+                    <td>09.04.1997</td>
+                    <td>0786567866</td>
+                    <td>male</td>
+                    <td>python</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>mala</td>
+                    <td>mala@gmail.com</td>
+                    <td>08.03.1999</td>
+                    <td>0756754568</td>
+                    <td>female</td>
+                    <td>css</td>
+                </tr>              
+        </table>
+    </form>
+</body>
+</html>
